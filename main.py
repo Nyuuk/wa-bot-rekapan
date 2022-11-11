@@ -10,7 +10,7 @@ proxies = dict(
 
 bearer_token = "rMQ91DrZFRfDHoP5GbmjG3dQ8iMZk/XnPq4couGYACKMf5AoCSwAr/D9NcFvnHpZ-adnan"
 URL = "https://api.kirimwa.id/v1/"
-WEBHOOK_URL = "https://webhook.site/token/67cba561-639e-48e4-87e0-0dab27133097"
+WEBHOOK_URL = "https://webhook.site/8536b5b8-b964-4e34-827d-33495874aeff"
 
 GROUP_ID = "120363028252064433"
 
@@ -65,11 +65,9 @@ def start():
                     stat_sp = None
                     for num in range(len(arr_txt_line)):
                         if arr_txt_line[num] == "pulang" or arr_txt_line[num] == "pulang:":
-                            stat_sp = "pulang"
                             pulang_start = num+1
                             status = True
                         if arr_txt_line[num] == "sakit" or arr_txt_line[num] == "sakit:":
-                            stat_sp = "sakit"
                             pulang_stop = num
                             sakit_start = num+1
                             status = True
